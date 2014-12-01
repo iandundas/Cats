@@ -12,9 +12,12 @@ Pod::Spec.new do |s|
   s.version          = "0.1.0"
   s.summary          = "A short description of Cats."
   s.description      = <<-DESC
-                       A collection of Categories which I use day-to-day
+                       An optional longer description of Cats
+
+                       * Markdown format.
+                       * Don't worry about the indent, we strip it!
                        DESC
-  s.homepage         = "https://github.com/iandundas/Cats"
+  s.homepage         = "https://github.com/<GITHUB_USERNAME>/Cats"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Ian Dundas" => "contact@iandundas.co.uk" }
