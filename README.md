@@ -5,18 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/Cats.svg?style=flat)](http://cocoadocs.org/docsets/Cats)
 [![Platform](https://img.shields.io/cocoapods/p/Cats.svg?style=flat)](http://cocoadocs.org/docsets/Cats)
 
-## Usage
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
-## Installation
-
-Cats is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-    pod "Cats"
+A work in progress - an effort to collect the various categories I use everyday into one place, basically to cut down on the amount of copy-and-pasting needed for each new project.
 
 ## Author
 
