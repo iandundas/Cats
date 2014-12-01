@@ -22,7 +22,9 @@
 		16946858FCA1EF8E12B4BB41 /* SPTXCTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 822440783D33B06FF6EDA96C /* SPTXCTestCase.h */; };
 		16B4D420C4BBE35E6213B4B7 /* EXPMatcherHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 82064669224B3836171B1E82 /* EXPMatcherHelpers.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		192D46781F39DEDB8783FA5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5C5678A944D314A2509863 /* Foundation.framework */; };
-		196568BC5DFCC0D38EFA648B /* NSArray+cats.m in Sources */ = {isa = PBXBuildFile; fileRef = 196568DE386247274C695BC5 /* NSArray+cats.m */; };
+		1965605B436473FE125D5445 /* NSString+cats.m in Sources */ = {isa = PBXBuildFile; fileRef = 196564021FABEB4FE1420067 /* NSString+cats.m */; };
+		1965643F958B1B4FC154E031 /* NSArray+cats.m in Sources */ = {isa = PBXBuildFile; fileRef = 19656067498EBB0F165959A2 /* NSArray+cats.m */; };
+		1965681BF8AF9958A13E30D7 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 196563C604F3BC13212C58E3 /* .gitkeep */; };
 		1A7F347E7EE7DAC13DB5D972 /* SPTSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 033983FB2E4E144F646C72B3 /* SPTSpec.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		1B78D70473F415EFA9569BCA /* EXPMatchers+notify.h in Headers */ = {isa = PBXBuildFile; fileRef = 4957131FDD0002F0370FC510 /* EXPMatchers+notify.h */; };
 		1C07A27126A5CB0A29CCA31F /* Pods-Cats-Expecta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 818E8A301A8EA557EE7CB04C /* Pods-Cats-Expecta-dummy.m */; };
@@ -169,8 +171,11 @@
 		1799C02347CA4BDE67B052FB /* NSValue+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+Expecta.h"; path = "src/NSValue+Expecta.h"; sourceTree = "<group>"; };
 		18A1D9394E3EDDC987130854 /* Specta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Specta.m; path = src/Specta.m; sourceTree = "<group>"; };
 		192153A232BFA2CC56532D2F /* EXPBackwardCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPBackwardCompatibility.h; path = src/EXPBackwardCompatibility.h; sourceTree = "<group>"; };
-		1965635A38DC56775E3F0B9C /* NSArray+cats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+cats.h"; sourceTree = "<group>"; };
-		196568DE386247274C695BC5 /* NSArray+cats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+cats.m"; sourceTree = "<group>"; };
+		19656067498EBB0F165959A2 /* NSArray+cats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+cats.m"; sourceTree = "<group>"; };
+		1965616B506C9CE99B412EF1 /* NSString+cats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+cats.h"; sourceTree = "<group>"; };
+		196563C604F3BC13212C58E3 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = file.gitkeep; path = .gitkeep; sourceTree = "<group>"; };
+		196564021FABEB4FE1420067 /* NSString+cats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+cats.m"; sourceTree = "<group>"; };
+		19656F5722582AC43988F9D7 /* NSArray+cats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+cats.h"; sourceTree = "<group>"; };
 		197976C3EBF8CC9F24568B78 /* NSObject+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Expecta.h"; path = "src/NSObject+Expecta.h"; sourceTree = "<group>"; };
 		21D58F6664130FBCC03473D7 /* libPods-Cats-Specta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cats-Specta.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21E06F454AA23774F1B243D5 /* SPTNestedReporter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTNestedReporter.m; path = src/SPTNestedReporter.m; sourceTree = "<group>"; };
@@ -338,21 +343,40 @@
 			);
 			sourceTree = "<group>";
 		};
+		19656BB9DC27115360BEC811 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				196563C604F3BC13212C58E3 /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		19656D29C27CBCB10B36D619 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				19656BB9DC27115360BEC811 /* Assets */,
+				19656DE307ECC76064E5D018 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		19656DE307ECC76064E5D018 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				19656067498EBB0F165959A2 /* NSArray+cats.m */,
+				19656F5722582AC43988F9D7 /* NSArray+cats.h */,
+				196564021FABEB4FE1420067 /* NSString+cats.m */,
+				1965616B506C9CE99B412EF1 /* NSString+cats.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		2B8E9106B8DD0CB7034B4684 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				9BEB81024759CC8DB3EC3F73 /* Pods-Cats */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		3C06B05B1A2CA34000DAF682 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				196568DE386247274C695BC5 /* NSArray+cats.m */,
-				1965635A38DC56775E3F0B9C /* NSArray+cats.h */,
-			);
-			name = Categories;
 			sourceTree = "<group>";
 		};
 		3C4E31434AE5596327F4CF66 /* Support Files */ = {
@@ -370,8 +394,8 @@
 		5D04A5866E1F991B5E0D3B9C /* Cats */ = {
 			isa = PBXGroup;
 			children = (
-				3C06B05B1A2CA34000DAF682 /* Categories */,
 				7E6BB53969B5B1825D91C881 /* Support Files */,
+				19656D29C27CBCB10B36D619 /* Pod */,
 			);
 			name = Cats;
 			path = ../..;
@@ -772,6 +796,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1965681BF8AF9958A13E30D7 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -861,7 +886,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				196568BC5DFCC0D38EFA648B /* NSArray+cats.m in Sources */,
+				1965643F958B1B4FC154E031 /* NSArray+cats.m in Sources */,
+				1965605B436473FE125D5445 /* NSString+cats.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
