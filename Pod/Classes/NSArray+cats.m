@@ -5,4 +5,5 @@
 #import "NSArray+cats.h"
 
 @implementation NSArray (cats)
+
 @end
