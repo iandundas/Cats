@@ -8,4 +8,7 @@
 -(UITableView*)tableView{
     return [self superviewWithClass:UITableView.class];
 }
+-(NSIndexPath*)indexPath{
+    return [self.tableView indexPathForCell:self];
+}
 @end
