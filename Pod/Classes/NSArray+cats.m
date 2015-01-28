@@ -5,5 +5,7 @@
 #import "NSArray+cats.h"
 
 @implementation NSArray (cats)
-
+-(BOOL)hasObjectAtIndex:(NSUInteger)index{
+    return index >= 0 && index < self.count;
+}
 @end

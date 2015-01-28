@@ -5,4 +5,5 @@
 #import <Foundation/Foundation.h>
 
 @interface NSArray (cats)
+-(BOOL)hasObjectAtIndex:(NSUInteger)index;
 @end
