@@ -7,5 +7,5 @@
 
 @interface UIColor (cats)
 +(UIColor*)randomColor;
-+ (UIColor *)randomColorfulColor;
++(UIColor *)randomColorfulColor;
 @end
